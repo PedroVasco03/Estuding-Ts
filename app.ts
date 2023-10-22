@@ -99,5 +99,22 @@ class Account{
     }
 }
 
+
+class Admin extends Account{
+    balance: number
+
+    constructor(name: string, accountNumber: number){
+        super(name, accountNumber)
+        this.balance = 20
+    }
+
+    getBalance = ()=>{
+        console.log(this.balance)
+    }
+}
+
+const adminAccount: Admin = new Admin('Vasco', 1);
+console.log(adminAccount)
+
 const newAccount :Account = new Account ('Pedro Vasco', 20)
 console.log(newAccount)
