@@ -53,6 +53,13 @@
 // validateUser('student')
 // validateUser('viewer')
 
-for(let i= 0; i<5; i++) {
-    console.log(i)
-}
+// for(let i= 0; i<5; i++) {
+//     console.log(i)
+// }
+
+const array : Array<number> = [1, 2, 3, 4, 5]
+
+const strtringArray : string[] =['A', 'B', 'C', 'D']
+
+console.log(array[0])
+console.log(strtringArray.length)
