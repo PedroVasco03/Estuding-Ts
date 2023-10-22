@@ -1,5 +1,26 @@
-const soma = (a: number, b:number) => {
-    console.log(a+b)
+interface Pessoa{
+    nome : string,
+    idade : number,
+    profissao?: string
 }
 
-soma(2,2)
+const Pessoa : Pessoa={
+    nome : 'Pedro',
+    idade: 20,
+    profissao:'Dev'
+}
+
+const Pessoa2: Pessoa = {
+    nome: 'André',
+    idade: 18
+}
+
+const arrayPessoa : Array<Pessoa> = [
+    Pessoa,
+    Pessoa2
+]
+
+const arrayNum: number [] = [1, 2, 3, 4, 5]
+const arrayString: string[] = [
+    '1', '2', '3', '4', '5'
+]
