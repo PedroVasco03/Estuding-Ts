@@ -37,18 +37,22 @@
 //     console.log('Num menor que 15')
 // }
 
-const typeUser = {
-    admin: 'Seja bem vindo administrator',
-    student: 'Você é estudante',
-    viewer: 'Você pode vizualizar'
+// const typeUser = {
+//     admin: 'Seja bem vindo administrator',
+//     student: 'Você é estudante',
+//     viewer: 'Você pode vizualizar'
+// }
+
+// function validateUser(user: string){
+//     console.log(typeUser[user as keyof typeof typeUser])
+// }
+
+// const usuario = 'admin'
+
+// validateUser(usuario)
+// validateUser('student')
+// validateUser('viewer')
+
+for(let i= 0; i<5; i++) {
+    console.log(i)
 }
-
-function validateUser(user: string){
-    console.log(typeUser[user as keyof typeof typeUser])
-}
-
-const usuario = 'admin'
-
-validateUser(usuario)
-validateUser('student')
-validateUser('viewer')
