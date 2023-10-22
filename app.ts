@@ -21,6 +21,6 @@ const arrayPessoa : Array<Pessoa> = [
 ]
 
 const arrayNum: number [] = [1, 2, 3, 4, 5]
-const arrayString: string[] = [
+const arrayString: Array<string> = [
     '1', '2', '3', '4', '5'
 ]
