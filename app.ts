@@ -57,9 +57,9 @@
 //     console.log(i)
 // }
 
-const array : Array<number> = [1, 2, 3, 4, 5]
+// const array : Array<number> = [1, 2, 3, 4, 5]
 
-const strtringArray : string[] =['A', 'B', 'C', 'D']
+// const strtringArray : string[] =['A', 'B', 'C', 'D']
 
-console.log(array[0])
-console.log(strtringArray.length)
+// console.log(array[0])
+// console.log(strtringArray.length)
