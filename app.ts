@@ -81,40 +81,32 @@
 // user.showName();
 
 
-class Account{
-    name: string
-    accountNumber: number
 
-    constructor(name: string, accountNumber: number){
-        this.name = name
-        this.accountNumber = accountNumber
-    }
-
-    deposit = () => {
-        console.log("Você Depositou")
-    }
-
-    withdraw = () => {
-        console.log("Você Sacou")
-    }
-}
-
-
-class Admin extends Account{
-    balance: number
+import { DioAccount } from "./class/DioAccount";
+import { PeopleAccount } from "./class/PeopleAccount";
+import { CompanyAccount } from "./class/CompanyAccount";
+class Admin extends DioAccount{
+    
 
     constructor(name: string, accountNumber: number){
         super(name, accountNumber)
         this.balance = 20
     }
 
-    getBalance = ()=>{
-        console.log(this.balance)
-    }
+    
 }
 
 const adminAccount: Admin = new Admin('Vasco', 1);
-console.log(adminAccount)
+// console.log(adminAccount)
 
-const newAccount :Account = new Account ('Pedro Vasco', 20)
-console.log(newAccount)
+
+
+
+
+const peopleAccount: PeopleAccount =new PeopleAccount(2, 'Vasco', 20)
+
+console.log(peopleAccount)
+peopleAccount.deposit()
+
+const companyAccount = new CompanyAccount('DIO',20)
+// console.log(companyAccount);
