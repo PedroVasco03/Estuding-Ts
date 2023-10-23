@@ -85,18 +85,18 @@
 import { DioAccount } from "./class/DioAccount";
 import { PeopleAccount } from "./class/PeopleAccount";
 import { CompanyAccount } from "./class/CompanyAccount";
-class Admin extends DioAccount{
+// class Admin extends DioAccount{
     
 
-    constructor(name: string, accountNumber: number){
-        super(name, accountNumber)
-        this.balance = 20
-    }
+//     constructor(name: string, accountNumber: number){
+//         super(name, accountNumber)
+//         this.balance = 20
+//     }
 
     
-}
+// }
 
-const adminAccount: Admin = new Admin('Vasco', 1);
+// const adminAccount: Admin = new Admin('Vasco', 1);
 // console.log(adminAccount)
 
 
@@ -106,7 +106,16 @@ const adminAccount: Admin = new Admin('Vasco', 1);
 const peopleAccount: PeopleAccount =new PeopleAccount(2, 'Vasco', 20)
 
 console.log(peopleAccount)
-peopleAccount.deposit()
+console.log(peopleAccount.getName())
+peopleAccount.deposit(2000)
+console.log("saldo atualizado ", peopleAccount.getBalance())
+peopleAccount.withdraw(1200)
+console.log("saldo atualizado ", peopleAccount.getBalance())
+
+peopleAccount.newAccount(100)
 
 const companyAccount = new CompanyAccount('DIO',20)
-// console.log(companyAccount);
+console.log(companyAccount);
+console.log(companyAccount.getName())
+companyAccount.getLoan(5000)
+companyAccount.getBalance()
